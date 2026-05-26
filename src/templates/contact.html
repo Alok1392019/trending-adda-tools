@@ -1,0 +1,38 @@
+<section class="section-padding" style="padding-top: 120px; margin-bottom: 5rem;">
+  <div class="container" style="max-width: 800px;">
+    <div class="text-center" style="margin-bottom: 4rem;">
+      <span class="hero-tag">✉️ Contact Us</span>
+      <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Get In Touch</h1>
+      <p class="section-subtitle">Have feedback, tool suggestions, or business inquiries? Send us a message!</p>
+    </div>
+    
+    <div class="glass-panel" style="padding: 3rem;">
+      <form id="contact-form" onsubmit="event.preventDefault(); showToast('Message sent successfully! We will get back to you soon.', 'success'); this.reset();">
+        <div class="grid grid-2">
+          <div class="tool-input-group">
+            <label class="tool-input-label" for="contact-name">Your Full Name:</label>
+            <input type="text" id="contact-name" class="tool-input" placeholder="e.g. John Doe" required>
+          </div>
+          <div class="tool-input-group">
+            <label class="tool-input-label" for="contact-email">Your Email Address:</label>
+            <input type="email" id="contact-email" class="tool-input" placeholder="e.g. john@example.com" required>
+          </div>
+        </div>
+        
+        <div class="tool-input-group" style="margin-top: 1.25rem;">
+          <label class="tool-input-label" for="contact-subject">Subject:</label>
+          <input type="text" id="contact-subject" class="tool-input" placeholder="e.g. Tool suggestion or feedback" required>
+        </div>
+        
+        <div class="tool-input-group" style="margin-top: 1.25rem;">
+          <label class="tool-input-label" for="contact-message">Your Message:</label>
+          <textarea id="contact-message" class="tool-textarea" placeholder="Type your message here in detail..." required style="min-height: 160px;"></textarea>
+        </div>
+        
+        <div class="text-center" style="margin-top: 2rem;">
+          <button type="submit" class="glow-btn" style="padding: 1rem 2.5rem; font-size: 1.05rem;">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

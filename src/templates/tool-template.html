@@ -1,0 +1,77 @@
+<section class="section-padding" style="padding-top: 120px;">
+  <div class="container">
+    <!-- Breadcrumbs -->
+    <ul class="breadcrumbs">
+      <li><a href="/">Home</a></li>
+      <li><a href="/category-{{categorySlug}}.html">{{categoryName}}</a></li>
+      <li style="color: var(--primary); font-weight: 600;">{{toolName}}</li>
+    </ul>
+    
+    <!-- Title Area -->
+    <div style="margin-bottom: 2.5rem;">
+      <span class="hero-tag">{{categoryName}}</span>
+      <h1 class="glow-text" style="font-size: 2.8rem; margin-top: 0.5rem; margin-bottom: 1rem;">{{toolName}}</h1>
+      <p style="color: var(--text-muted); max-width: 800px; font-size: 1.05rem;">{{toolShortDesc}}</p>
+    </div>
+    
+    <!-- AdSense Top Banner -->
+    <div class="adsense-placeholder">
+      <div>📣 ADVERTISEMENT</div>
+      <div style="font-size: 0.75rem; margin-top: 0.25rem;">Google AdSense Banner (Auto Responsive)</div>
+    </div>
+    
+    <!-- Core Layout -->
+    <div class="tool-layout">
+      <!-- Left: Interactive Canvas -->
+      <div>
+        <div class="glass-panel tool-container" style="margin-bottom: 2rem;">
+          <!-- Custom Tool HTML injected here -->
+          {{{toolHtml}}}
+        </div>
+        
+        <!-- Social Shares -->
+        <div class="glass-panel" style="padding: 1.5rem; margin-bottom: 2rem;">
+          <h4 style="font-size: 1rem; margin-bottom: 0.8rem;">Share this Tool with Friends</h4>
+          <div class="share-container">
+            <button class="share-btn share-facebook">Facebook</button>
+            <button class="share-btn share-twitter">Twitter / X</button>
+            <button class="share-btn share-whatsapp">WhatsApp</button>
+            <button class="share-btn share-linkedin">LinkedIn</button>
+          </div>
+        </div>
+        
+        <!-- SEO Long Copy Section -->
+        <div class="glass-panel" style="padding: 2.5rem; line-height: 1.8;">
+          <div class="seo-content" style="color: var(--text-muted);">
+            {{{seoContent}}}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Sidebar: Proposals & Ads -->
+      <aside>
+        <!-- AdSense Sidebar Banner -->
+        <div class="adsense-placeholder" style="min-height: 250px;">
+          <div>📣 ADVERTISEMENT</div>
+          <div style="font-size: 0.75rem; margin-top: 0.25rem;">Google AdSense Banner (Sidebar)</div>
+        </div>
+        
+        <!-- Related Tools -->
+        <div class="glass-panel" style="padding: 1.5rem; margin-top: 2rem;">
+          <h4 style="margin-bottom: 1.25rem; font-size: 1.1rem; color: var(--primary);">Related Tools</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;" id="sidebar-related-list">
+            {{{relatedToolsHtml}}}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Inline script specifically running this tool -->
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Inject and execute custom tool logic
+    {{{toolJs}}}
+  });
+</script>
