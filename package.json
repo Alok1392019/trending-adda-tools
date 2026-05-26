@@ -1,0 +1,18 @@
+{
+  "name": "trending-adda-tools",
+  "version": "1.0.0",
+  "description": "Trending Adda Tools - Premium Responsive Tools Platform",
+  "main": "generate.js",
+  "scripts": {
+    "build": "node generate.js",
+    "dev": "npx -y lite-server"
+  },
+  "keywords": [
+    "tools",
+    "utility",
+    "seo",
+    "static-site-generator"
+  ],
+  "author": "Trending Adda Tools team",
+  "license": "ISC"
+}

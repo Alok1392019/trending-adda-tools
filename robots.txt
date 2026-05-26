@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://trendingaddatools.com/sitemap.xml
+
